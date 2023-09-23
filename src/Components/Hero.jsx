@@ -47,7 +47,7 @@ function Hero() {
                 <span></span>
             </div>
             <div className='flex flex-col w-full items-start gap-4'>
-                <motion.img 
+                <motion.img
                     variants={heroImg}
                     src={HeroImage} alt="Hero image" className='object-contain max-h-[65vh] w-full' />
                 <div className='flex items-start lg:gap-1.5 gap-3 md:gap-2 '>
