@@ -1,64 +1,34 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import HeroImage from '../assets/Illustras/HeroImage.png'
 import Quote from '../assets/Icons/quote.png'
 import { motion } from 'framer-motion';
 
 function Hero() {
-    const heroDiv = {
-        hidden: { opacity: 0},
-        visible: {opacity: 1}
-    }
-
-    const heroText = {
-        hidden: {  scale: 0.5, },
-        visible: { 
-            scale: 1, 
-            transition: {
-                delay: 0.5
-        }}
-
-    }
-    const heroImg = {
-        hidden: {
-            y: -60
-        },
-        visible: {
-            y: 0,
-
-        }
-    }
+  
     return (
-        <div className='flex justify-center items-center'>
-        <div className='md:flex-row flex flex-col  w-full items-center justify-center lg:px-20 px-4 md:px-8 py-8 lg:gap-52 xl:gap-96 gap-10 max-w-screen-xl'>
-            <div className='flex flex-col  items-start gap-10  '>
-                <motion.div
-                    initial="hidden"
-                    animate="visible"
-                    variants={heroDiv} 
-                    className='flex flex-col w-full gap-4'>
-                    <motion.h1
-                        initial="hidden"
-                        animate="visible"
-                        variants={heroText}
-                        className='lg:text-4xl md:text-3xl text-2xl font-extrabold  md:tracking-wide tracking-widest text-PB900 w-11/12 lg:w-[360px] '>Providing Inclusive Investments in Real Estate</motion.h1>
-                    <h5 className='tracking-tight text-Gray700 w-10/12 text-sm'>Invest in real estate and earn proceeds from asset use and management </h5>
-                </motion.div>
-                <a href="/register" className='flex justify-center items-center px-5 py-3 rounded-full gap-1 bg-PB400 text-sm'>Get Started</a>
-                <span></span>
-            </div>
-            <div className='flex flex-col w-full items-start gap-4'>
-                <motion.img
-                    variants={heroImg}
-                    src={HeroImage} alt="Hero image" className='object-contain max-h-[65vh] w-full' />
-                <div className='flex items-start lg:gap-1.5 gap-3 md:gap-2 '>
-                    <img src={Quote} alt="quote" className='w-6 h-6' />
-                    <div className='flex flex-col'>
-                    <h2 className=' text-emerald-950 text-base font-medium leading-relaxed'>I grow my money by investing with folda</h2>
-                    <h3 className='text-gray-400 text-sm font-bold leading-tight'>-Jusin Bella</h3>
+        <div className='bg-white justify-center items-center px-4 py-4 md:px-8 lg:px-16 md:py-8 '>
+            <div className='flex flex-col md:flex-row gap-12 lg:gap-24 justify-center items-start'>
+                <div className='flex-col justify-start items-start gap-7 flex w-full md:w-1/2 '>
+                    <div className='flex flex-col justify-start items-start gap-4 '>
+                        <h1 className=' text-3xl md:text-4xl lg:text-5xl  text-emerald-950 font-extrabold'>Providing Inclusive Investment in <br /> Real Estate</h1>
+                        <h6 className='text-gray-500 text-sm md:text-md lg:text-2xl font-normal leading-tight md:leading-9 w-72 md:w-full '>Invest in real estate and earn proceeds from asset use and management</h6>
+                    </div>
+                    <Link to='/register' className='w-36 h-12 px-2.5 py-4 bg-sky-300 rounded-3xl justify-center items-center gap-1 inline-flex'>
+                            <span className='text-emerald-950 text-xs md:text-sm font-bold leading-tight md:leading-normal'>Get Started</span>
+                        </Link>
+                </div>
+                <div className='w-full md:w-80 lg:w-96 flex flex-col gap-2'>
+                    <img src={HeroImage} alt="Hero Image" className='object-fit' />
+                    <div className='flex flex-col gap-2'>
+                        <div className='flex gap-3 items-center'>
+                            <img src={Quote} alt="quote" className='w-7 h-7' />
+                            <h1 className=' text-emerald-950 text-md md:text-sm font-medium leading-relaxed'>I grow my money by investing in Folda</h1>
+                        </div>
+                        <h6 className='pl-10 text-gray-400 text-sm font-bold leading-tight'><span>-</span> Justin Bella</h6>
                     </div>
                 </div>
             </div>
-        </div>
         </div>
     );
 }

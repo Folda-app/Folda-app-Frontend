@@ -2,6 +2,7 @@ import React, {useState, useEffect} from 'react';
 import Menu from '../assets/Icons/menu2.png';
 import Logo from '../assets/Illustras/Logo.png'
 import {Link, useLocation} from 'react-router-dom';
+import {BiX} from 'react-icons/bi'
 
 function NavBar({isOnBoardPage, darkColorScheme, activeNav}) {
     const NavItems = [
@@ -13,6 +14,7 @@ function NavBar({isOnBoardPage, darkColorScheme, activeNav}) {
     ]
     const location = useLocation('');
     const [activeNavItem, setActiveNavItem] = useState('');
+    const [isToggleOpen, setIsToggleOpen] = useState(false)
 
     useEffect(() => {
         const currentPath = location.pathname;
@@ -52,9 +54,33 @@ function NavBar({isOnBoardPage, darkColorScheme, activeNav}) {
                 <button className='flex justify-center items-center px-3 py-2.5 rounded-full gap-1 w-full  bg-Gray100'><a href="login" className='lg:text-sm md:text-sm'>Log in</a></button>
                 <button className='flex justify-center items-center px-3 py-2.5 rounded-full gap-1 w-full bg-PB400'><a href="/register" className='lg:text-sm md:text-sm'>Create Account</a></button>
             </div>
-            <div className='w-10 h-10 p-2 rounded-full border border-teal-100 justify-center items-center gap-2.5 flex md:hidden'>
-            <img src={Menu} alt="menu" className=' relative' />
+            <div className={`w-10 h-10 p-2 rounded-full border border-teal-100 justify-center items-center gap-2.5 flex md:hidden 
+             ${
+              isToggleOpen
+                ? "visible opacity-100 [&_span:nth-child(1)]:w-6 [&_span:nth-child(1)]:translate-y-0 [&_span:nth-child(1)]:rotate-45 [&_span:nth-child(3)]:w-0 [&_span:nth-child(2)]:-rotate-45 "
+                : ""
+            }`}
+            onClick={() => setIsToggleOpen(!isToggleOpen)}
+            >
+           {isToggleOpen ? <BiX className='w-10 h-10 text-cyan-500'/> :  <img src={Menu} alt="menu" className=' relative' />}
             </div>
+            <ul
+              className={`absolute top-0 left-0 z-[-1] h-screen w-full justify-center overflow-hidden  overflow-y-auto overscroll-contain bg-white/90 px-8 pb-12 pt-24 font-medium transition-[opacity,visibility] duration-300 ${
+                isToggleOpen
+                  ? "visible opacity-100 backdrop-blur-sm "
+                  : "invisible opacity-0"
+              }`} 
+            >
+              {NavItems.map((navItem) => (
+                <li className='flex items-stretch'>
+                  <Link to={navItem.path} className='flex items-center gap-2 py-4 text-emerald-950 transition-colors duration-300 focus:bg-emerald-50 focus:outline-none focus-visible:outline-none'>{navItem.name}</Link>
+                </li>
+              ))}
+              <div className='flex flex-col gap-3'>
+              <button className='flex justify-center items-center px-3 py-2.5 rounded-full gap-1 w-full border border-gray-300  bg-Gray100 ' disabled ><a href="" className='lg:text-sm md:text-sm ' aria-disabled >Log in</a></button>
+              <button className='flex justify-center items-center px-3 py-2.5 rounded-full gap-1 w-full bg-PB400'><a href="/register" className='lg:text-sm md:text-sm'>Create Account</a></button>
+              </div>
+            </ul>
             </div> 
         </div>
     );
