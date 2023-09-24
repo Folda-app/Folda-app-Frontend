@@ -25,7 +25,7 @@ function NavBar({isOnBoardPage, darkColorScheme, activeNav}) {
            <div className='flex justify-between items-center py-3 px-4 md:px-5 lg:px-12'>
             <a href="/" className='flex items-center gap-2 justify-center '>
                 <img src={Logo} alt="logo" className='md:w-10 w-8' />
-                <h1 className='font-extrabold text-2xl md:text-2xl lg:text-3xl tracking-tight text-cyan-500'>F<span className='text-orange-400'>O</span>LDA</h1>
+                <h1 className='font-bold text-2xl md:text-2xl lg:text-3xl tracking-tight text-cyan-500'>f<span className='text-orange-400'>o</span>lda</h1>
             </a>
             <div>
             <div className=' hidden md:flex '>

@@ -11,6 +11,7 @@ function Listing(props) {
     src={PropertyImage}
     alt="Property Image"
     className="object-cover w-full h-64"
+    loading='lazy'
   />
 
   <div className="flex items-center justify-center flex-1">
