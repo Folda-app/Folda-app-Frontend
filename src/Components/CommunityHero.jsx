@@ -11,7 +11,7 @@ function CommunityHero(props) {
                     <h1 className='text-emerald-950 text-3xl md:text-4xl lg:text-5xl font-extrabold'>Growth is easy with a community</h1>
                     <h5 className='text-gray-500 text-sm md:text-lg lg:text-xl font-normal leading-tight lg:leading-9'>Meet peers with similar goals and upscale your investment journey</h5>
                     </div>
-                    <Link to='/register' className='w-36 px-1.5 py-2.5 bg-sky-300 rounded-3xl justify-center items-center gap-1 flex'>
+                    <Link to='https://linktr.ee/foldaapp' className='w-36 px-1.5 py-2.5 bg-sky-300 rounded-3xl justify-center items-center gap-1 flex'>
                         <span className='text-emerald-950 text-sm md:text-base font-bold leading-normal'>Join Now</span>
                     </Link> 
                 </div>
