@@ -10,12 +10,12 @@ function InputEmail(props) {
              <div className='flex flex-col items-start gap-4 w-full lg:min-w-[400px] mt-16 lg:-mt-16'>
              <div className=" flex flex-col gap-[20px] items-start px-4 w-full ">
                     <div className='flex flex-col gap-[6px] w-full h-[68px] '>
-                        <h1 className=" font-extrabold text-xl lg:text-2xl text-[#052228] ">Create Account</h1>
-                        <span className="text-base font-medium text-Gray600">Enter your email to continue</span>
+                        <h1 className=" font-extrabold text-2xl md:text-3xl text-emerald-950 font-Gilroy ">Create Account</h1>
+                        <span className="text-base font-medium text-Gray600 font-Lato">Enter your email to continue</span>
                     </div>
                     <a href='#' className="flex justify-center gap-3 items-center py-3 px-8 border-solid border border-[#F4F7FB] bg-white border-box w-full rounded-3xl ">
                         <img src={Google} alt="google Img" />
-                        <span className='text-sm font-bold text-Gray600  tracking-tight'>Signup with google</span>
+                        <span className='text-sm font-bold text-Gray600  tracking-tight '>Signup with google</span>
                     </a>
                 </div>
 

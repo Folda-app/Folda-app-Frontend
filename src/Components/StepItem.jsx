@@ -10,8 +10,8 @@ function StepItem({Icon, Title, Note}) {
                 </div>
 
                 <div className='flex-col justify-start items-start gap-2.5 flex'>
-                <div className="text-cyan-500 text-lg  font-extrabold">{Title}</div>
-                <div className=" text-gray-500 text-xs font-medium leading-tight">{Note}</div>
+                <div className="text-cyan-500 text-lg  font-extrabold font-Gilroy">{Title}</div>
+                <div className=" text-gray-500 text-xs font-medium leading-tight font-Lato">{Note}</div>
                 </div>
             </div>
         </div>

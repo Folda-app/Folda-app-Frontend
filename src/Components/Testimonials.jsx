@@ -20,8 +20,8 @@ function Testimonials(props) {
                 </div>
                 
                 <div className=" md:w-1/2 flex-col justify-center items-start gap-4 md:gap-8 flex ">
-                    <div className=" text-emerald-950 lg:text-4xl md:text-3xl text-xl font-extrabold">Hear from our happy customers</div>
-                    <div className=" text-gray-500 text-sm lg:text-xl md:text-md font-normal leading-tight lg:leading-9 md:leading-relaxed">Hear from our customers how Folda has improved their standard of living</div>
+                    <div className=" text-emerald-950 lg:text-4xl md:text-3xl text-xl font-extrabold font-Gilroy">Hear from our happy customers</div>
+                    <div className=" text-gray-500 text-sm lg:text-xl md:text-md font-normal leading-tight lg:leading-9 md:leading-relaxed font-lato">Hear from our customers how Folda has improved their standard of living</div>
                  </div>
                 
             </div>

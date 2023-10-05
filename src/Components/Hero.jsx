@@ -11,8 +11,8 @@ function Hero() {
             <div className='flex flex-col md:flex-row gap-12 lg:gap-24 justify-center items-start'>
                 <div className='flex-col justify-start items-start gap-7 flex w-full md:w-1/2 '>
                     <div className='flex flex-col justify-start items-start gap-4 '>
-                        <h1 className=' text-3xl md:text-4xl lg:text-5xl  text-emerald-950 font-extrabold'>Providing Inclusive Investment in <br /> Real Estate</h1>
-                        <h6 className='text-gray-500 text-sm md:text-md lg:text-2xl font-normal leading-tight md:leading-9 w-72 md:w-full '>Invest in real estate and earn proceeds from asset use and management</h6>
+                        <h1 className=' text-2xl md:text-3xl lg:text-4xl  text-emerald-950 font-extrabold font-Gilroy'>We Provide Inclusive Real Estate Solutions</h1>
+                        <h6 className='text-gray-500 text-sm md:text-md lg:text-xl font-normal leading-tight lg:leading-9 w-72 md:w-full font-Lato '>Using technology to create a sustainable and a well-tailored real estate portfolio.</h6>
                     </div>
                     <Link to='/register' className='w-36 h-12 px-2.5 py-4 bg-sky-300 rounded-3xl justify-center items-center gap-1 inline-flex'>
                             <span className='text-emerald-950 text-xs md:text-sm font-bold leading-tight md:leading-normal'>Get Started</span>

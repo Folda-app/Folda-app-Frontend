@@ -17,6 +17,10 @@ export default {
         PB800: '#0A4550',
         PB900: '#052228',
         GD100: '#FEF3E9'
+      },
+      fontFamily: {
+        Gilroy: ['Gilroy', 'sans-serif'],
+        Lato: ['Lato']
       }
     },
   },
