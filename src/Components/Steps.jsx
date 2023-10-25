@@ -17,7 +17,7 @@ function Steps(props) {
                     <div className=' flex-col justify-start items-start gap-6 inline-flex '>
                         <div className='flex-col justify-start items-start gap-4 flex'>
                         <p className='text-emerald-950 lg:text-4xl md:text-3xl text-xl font-extrabold md:w-80 lg:w-96 font-Gilroy'>Get started in quick and easy steps</p>
-                        <p className='text-gray-500 text-sm leading-tight lg:text-xl md:text-lg font-normal md:leading-relaxed lg:leading-9  md:w-80 lg:w-96 font-Lato'>Fast track your investments progress, get started with us</p>
+                        <p className='text-gray-500 text-base leading-6 lg:text-xl md:text-lg font-normal md:leading-relaxed lg:leading-9  md:w-80 lg:w-96 font-Lato'>Fast track your investments progress, get started with us</p>
                         </div>
                         <Link to='/register' className='w-36 h-12 px-2.5 py-4 bg-sky-300 rounded-3xl justify-center items-center gap-1 inline-flex'>
                             <span className='text-emerald-950 text-xs md:text-sm font-bold leading-tight md:leading-normal'>Create Account</span>

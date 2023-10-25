@@ -29,7 +29,7 @@ function Footer(props) {
         {name: 'Glossary', route: '/'}
     ]
     return (
-        <div className='p-3 md:p-6 flex flex-col md:flex-row md:gap-20 lg:gap-28 justify-start xl:justify-center'>
+        <div className='p-3 pt-20 md:pt-36 md:p-6 flex flex-col md:flex-row md:gap-20 lg:gap-28 justify-start xl:justify-center'>
             <div className='flex flex-col gap-4 py-4 md:py-0'>
                 <div className='flex gap-2 items-center'>
                 <img src={Logo} alt="logo" className='w-8 md:w-10 ' />
